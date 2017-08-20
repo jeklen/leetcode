@@ -1,3 +1,6 @@
+# 单行注释
+'''
+多行注释
 def join_biggest_int(n, nums):
     for j in range(1, n):
         key = nums[j]
@@ -23,6 +26,14 @@ if __name__ == '__main__':
     n = int(input())
     nums = input()
     nums = nums.split(' ')
-    print(nums)
-    biggest = join_biggest_int(n, nums)
-    print(biggest)
+    nums.sort(compare_str, reverse=True)
+    print(''.join(nums))
+'''
+def cmp(a, b):
+    ab = int(a+b)
+    ba = int(b+a)
+    return 1 if ab > ba else -1
+num = input()
+l=input().split(' ')
+l.sort(cmp, reverse=True)
+print(int(''.join(l)))

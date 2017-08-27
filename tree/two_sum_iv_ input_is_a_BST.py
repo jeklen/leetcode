@@ -17,6 +17,10 @@ class Solution(object):
         :type k: int
         :rtype: bool
         """
+        # 尝试用循环的方式来实现
+        while root:
+            ...
+
         pair = k - root.val
         if pair in self.v:
             return True

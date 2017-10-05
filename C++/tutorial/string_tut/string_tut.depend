@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1506904979 source:d:\mycode\leetcode\c++\tutorial\string_tut\main.cpp
+	<iostream>
+	<string>
+

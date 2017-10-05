@@ -15,4 +15,16 @@ printf("%d\n", a+b);
 ```
 C++
 ```
-while
+while (cin>>a>>b) {
+	cout << a + b << endl;
+}
+```
+java
+```
+Scanner scanner = new Scanner(System.in);
+while (scanner.hasNextInt()) {
+	int a = scanner.nextInt();
+	int b = scanner.nextInt();
+	System.out.println(a+b);
+}
+```
